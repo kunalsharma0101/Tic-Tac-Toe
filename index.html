@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Fira+Sans:ital@1&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <div class="winner w-full h-[10px] font-extrabold text-3xl capitalize text-center mt-10"> </div>
+    <!-- heading -->
+    <header class="text-black w-full h-[10px] mt-20 mb-24 text-center  font-extrabold text-5xl flex justify-center items-center cursor-not-allowed " >
+        Tic-Tac-Toe</header>
+
+
+    <!-- box container -->
+    
+        <section class="gameSection h-[50vh] flex justify-center flex-wrap items-center w-full ">
+            <div class="container flex justify-center items-center  gap-5 ">
+        <button class="box w-24 h-24 shadow-md shadow-black  rounded-2xl hover:outline outline-4 outline-black transition-all duration-75 flex justify-center font-bold items-center text-5xl cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-black transition-all duration-75 flex justify-center items-center text-5xl outline-4 cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-black transition-all duration-75 flex justify-center items-center text-5xl outline-4 cursor-pointer"></button>
+    </div>
+    <div class="container flex justify-center items-center   gap-5 ">
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+</div>
+<div class="container flex justify-center items-center gap-5 ">
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+        <button class="box w-24 h-24 shadow-md shadow-black rounded-2xl font-bold hover:outline outline-4  outline-black transition-all duration-75 flex justify-center items-center text-5xl cursor-pointer"></button>
+</div>
+
+
+    </section>
+
+
+
+    <!-- buttons -->
+    <section class="buttons flex justify-center items-center gap-16 mt-14">
+        <button class=" reset border-4 border-black p-2 rounded-lg font-extrabold hover:bg-red-500" onclick="resetBtn()">Reset Game</button>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
